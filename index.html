@@ -51,16 +51,31 @@
         .nav-container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 0.8rem 2rem;
+            padding: 0.6rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .logo-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
         }
 
         .logo-img {
             height: 55px;
             width: auto;
             display: block;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
         }
 
         .nav-links {
@@ -390,8 +405,9 @@
     <!-- HEADER -->
     <header>
         <div class="nav-container">
-            <a href="#">
-                <img src="logo.png" alt="La Ferme des Coco Bihan" class="logo-img">
+            <a href="#" class="logo-brand">
+                <img src="logo.jpg" alt="Logo La Ferme des Coco Bihan" class="logo-img">
+                <span class="logo-text">La Ferme des Coco Bihan</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#produits">Nos produits</a></li>
@@ -422,7 +438,7 @@
         
         <div class="products-grid">
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Micro-pousses fraîches" class="product-img">
+                <img src="micro-pousse.jpg" alt="Micro-pousses fraîches" class="product-img">
                 <div class="product-body">
                     <h3>Les Micro-Pousses</h3>
                     <p>Véritables concentrés de saveurs, de couleurs et de vitalité. Récoltées au stade idéal, elles subliment vos plats de l'entrée au dessert avec une touche gastronomique unique.</p>
@@ -430,7 +446,7 @@
             </div>
 
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=600&q=80" alt="Kit de culture Ker Bihan Box" class="product-img">
+                <img src="box.png" alt="Kit de culture Ker Bihan Box" class="product-img">
                 <div class="product-body">
                     <h3>Le kit « Ker Bihan Box »</h3>
                     <p>Envie de cultiver vous-même ? Notre kit de graines à semer clé en main vous permet de faire pousser facilement vos propres micro-pousses à la maison. Ludique, naturel et 100% local.</p>
